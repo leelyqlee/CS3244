@@ -42,7 +42,7 @@ def test_k_values(train_X, train_y):
     
     # Test detailed range for zoomed view
     zoomed_rsq_values = []
-    zoomed_k_values = list(range(1, 42, 2))
+    zoomed_k_values = list(range(1, 42))
     
     for i in zoomed_k_values:
         knn_reg = KNeighborsRegressor(n_neighbors=i)
